@@ -5,12 +5,9 @@
 const clients1 = ["Гилберт", "Сальваторе", "Пирс", "Соммерс", "Форбс", "Донован", "Беннет"];
 const clients2 = ["Пирс", "Зальцман", "Сальваторе", "Майклсон"];
 
-
 const [ gilbert,  ,pirs, sommers, forbs, donovan, bennett] = clients1;
 
-
 const [ ,zalzman, salvatore, michaelson] = clients2;
-
 
 const clients3 =[gilbert, pirs, sommers, forbs, donovan, bennett,zalzman, salvatore, michaelson];
 
@@ -125,7 +122,6 @@ const characters = [
 
   const {technology} = satoshi2018;
    
-
   const {browser,wallet} = satoshi2019;
 
   const {name:satoshiName,surname,age:satoshiAge,country,birth,location:{lat,lng}} = satoshi2020;
@@ -173,10 +169,9 @@ const books = [{
 
  const  {name:bookName,author} = bookToAdd;
 
+ const newBooks = [...books,{name:bookName,author}]
 
-const newBooks = [...books,{name:bookName,author}]
-
-console.log(newBooks);
+ console.log(newBooks);
 
 
 // 6.
@@ -185,7 +180,6 @@ const employee = {
     name: 'Vitalii',
     surname: 'Klichko'
   }
-
 
 const{name:employeeName,surname:employeeSurname,age:employeeAge = 45 ,salary = 25000} = employee;
 
