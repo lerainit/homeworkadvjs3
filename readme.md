@@ -25,12 +25,12 @@ console.log(cat3)// Vasia
 const numbers = ["one", "two", "three"];
 
 // без деструктурирования
-const one = foo[0];
-const two = foo[1];
-const three = foo[2];
+const one = numbers[0];
+const two = numbers[1];
+const three = numbers[2];
 
 // с деструктурированием
-const [one, two, three] = foo;
+const [one, two, three] = numbers;
 
 
 
